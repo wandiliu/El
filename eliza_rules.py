@@ -77,7 +77,11 @@ def respond(rules, input, default_responses):
         if replacement:
             response = response.replace('?' + variable, replacement)
     
-    return response.capitalize()
+    # Make the response lower case, since capitalization is complicated. 
+    # (This should probably be fixed at some point. Or we can have an emo bot.)
+    response = response.lower()
+
+    return response
     
 
 ## Pattern matching
