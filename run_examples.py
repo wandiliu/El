@@ -49,7 +49,4 @@ def discover_modules(root):
 
 
 if __name__ == '__main__':
-    args = vars(parser.parse_args())
-    if args['log']:
-        logging.basicConfig(level=logging.DEBUG)
     main()
