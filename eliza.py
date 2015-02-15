@@ -1,6 +1,8 @@
+import sys
+import sys
 import json
 import sys
-from paip import eliza
+import eliza_rules as eliza
 
 rules = {
     "?*x hello ?*y": [
@@ -210,4 +212,4 @@ def main():
     eliza.interact('ELIZA> ', rules_list, map(str.upper, default_responses))
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    main()

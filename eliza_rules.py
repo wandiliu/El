@@ -77,7 +77,7 @@ def respond(rules, input, default_responses):
         if replacement:
             response = response.replace('?' + variable, replacement)
     
-    return response
+    return response.capitalize()
     
 
 ## Pattern matching
