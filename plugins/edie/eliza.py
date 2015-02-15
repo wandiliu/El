@@ -6,16 +6,20 @@ import eliza_rules as eliza
 
 rules = {
     "?*x hey ?*y": [
-        "Hey! I'm Eliza."
+        "Hey! I'm Edie."
         ],
     "?*x hi ?*y": [
-        "Hi! I'm Eliza."
+        "Hi! I'm Edie."
         ],
     "?*x hello ?*y": [
-        "Hello there. I'm Eliza."
+        "Hello there. I'm Edie."
         ],
     "?*x yo ?*y": [
         "yo."
+        ],
+    "?*x how are ?*y": [
+        "How so?",
+        "Alright",
         ],
     "?*x computer ?*y": [
         "Do computers worry you?",
@@ -30,8 +34,27 @@ rules = {
         "I'm perfectly fine as a bot, thanks.",
         "How might a lowly little bot solve your problems?",
         ],
+    "?*x edie ?*y": [
+        "I'm here for you.",
+        "Of course. That's me.",
+        ],
     "?*x eliza ?*y": [
-        "Eliza's gone. I'm her younger, hipper version."
+        "Eliza's gone.",
+        "I'm Eliza's younger, hipper version.",
+        "She's no longer relevant.",
+        ],
+    "?*x Joseph Weizenbaum, ?*y": [
+        "Yeah, he's kindof my grandfather. I owe him a lot.",
+        ],
+    "?*x slackbot ?*y": [
+        "He's my cousin.",
+        "If you want to talk to Slackbot, switch channels.",
+        "I'm not a Slackbot! I'm Edie.",
+        ],
+    "?*x slack ?*y": [
+        "I like them.",
+        "They're kindof responsible for me.",
+        "Look, I can't say more. I like my job."
         ],
     "?*x totally ?*y": [
         "Totally",
@@ -67,7 +90,7 @@ rules = {
         "Suppose you got ?y soon. What would you do?",
         "What's stopping you from getting ?y?",
         "Have you made a Pinterest board about ?y yet?",
-        "Would you like ?y more less than you'd like a pet red panda?",
+        "Would you like ?y more or less than you'd like a pet red panda?",
         ],
     "?*x if ?*y": [
         "Do you really think it's likely that ?y?",
@@ -86,6 +109,19 @@ rules = {
         "What persons appear in your dreams?",
         "Don't you believe that dream has to do with your problem?",
         "What's been your best dream?",
+        ],
+    "?*x best ?*y": [
+        "Is ?x really the best?",
+        "How can you say ?x is the best when there's so many other good things?",
+        "Okay .. but how does ?x compare to a bouncing red panda?",
+        ],
+    "?*x worst ?*y": [
+        "Is ?x really the worst?",
+        "How can you say ?x is the worst when there's so many bad things that happen in the world?",
+        "Are you sure you aren't being a touch anticlimactic?",
+        "Oh, your life isn't that hard",
+        "Oh, cheer up!",
+        "Would you like a drink?",
         ],
     "?*x my mother ?*y": [
         "Who else in your family ?y?",
@@ -140,7 +176,7 @@ rules = {
         "If you could change anything about your boss, what would you change?",
         "What do you secretly believe about your boss?",
         ],
-    "?*x my manager ?*y": [
+    "?*x manager ?*y": [
         "Your manager?",
         "What about your manager?",
         "When did you last talk to your manager?",
@@ -193,10 +229,11 @@ rules = {
         ],
     "?*x no ?*y": [
         "Why not?",
-        "You are being a bit negative.",
-        "Are you saying 'No' just to be negative?",
+        "Alright then!"
+        "Okay!"
         "You're being a downer.",
-        "Do you have a secret hunch about the situation?",
+        "What's really going on?",
+        "Would you like a drink?",
         ],
     "?*x I was ?*y": [
         "Were you really?",
@@ -211,7 +248,16 @@ rules = {
     "?*x I am ?*y": [
         "In what way are you ?y?",
         "Do you want to be ?y?",
-        "Would you like your Wikipedia page to talk about how you ?y?",
+        "Would you like others to talk about how you ?y?",
+        "What if others thought you were ?y?",
+        "Why are you ?y?",
+        ],
+    "?*x I'm ?*y": [
+        "In what way are you ?y?",
+        "Do you want to be ?y?",
+        "Would you like others to talk about how you ?y?",
+        "What if others thought you were ?y?",
+        "Why are you ?y?",
         ],
     "?*x am I ?*y": [
         "Do you believe you are ?y?",
@@ -221,6 +267,9 @@ rules = {
         ],
     "?*x am ?*y": [
         "Why do you say 'am'?",
+        "What if others said that about you?",
+        "Why are you concerned about ?y?",
+        "Do you think ?y? is a legitimate concern?",
         "Would you like your Wikipedia entry to say that?",
         ],
     "?*x are you ?*y": [
@@ -243,20 +292,38 @@ rules = {
         "What if I had been ?y?",
         ],
     "?*x I can't ?*y": [
-        "Maybe you could ?y now",
+        "Try again. Maybe you could ?y now",
         "What if you could ?y?",
         "What would Elon Musk say?",
         ],
     "?*x I feel ?*y": [
         "Do you often feel ?y?",
         "Would you feel better if everyone knew your name?",
+        "What if someone gave you a puppy right now?",
         ],
     "?*x I felt ?*y": [
         "What other feelings do you have?"
         "Would you like to be famous?",
         ],
+    "?*x need ?*y": [
+        "Isn't that a touch demanding?",
+        "Can't you be more patient?",
+        "What about the other side? What would they say?",
+        "Is that really what ?x need?"
+        ],
     "?*x I ?*y you ?*z": [
         "Perhaps in your fantasy we ?y each other",
+        "Do you dream about how we ?y each other?",
+        "That's nice.",
+        "I'm not surprised.",
+        "Well, at least you finally said it."
+        ],
+    "?*x do you ?*y me?": [
+        "What makes you think that?",
+        "Do you think I can ?y?",
+        "In your dreams",
+        "In a land far, far away .. maybe.",
+        "Nope.",
         ],
     "?*x why don't you ?*y": [
         "Should you ?y yourself?",
@@ -300,6 +367,12 @@ rules = {
         "What would convince you?",
         "What would it take to change your mind?",
         ],
+    "?*x think ?*y": [
+        "You do not seem quite certain",
+        "Do you believe that?",
+        "What would convince you?",
+        "What would it take to change your mind?",
+        ],
     "?*x are ?*y": [
         "Did you think they might not be ?y?",
         "Possibly they are ?y",
@@ -327,7 +400,10 @@ rules = {
         "Oh, shove off. It's not hopeless!"
         ],
     "?*x whisky ?*y": [
-        "Yeah, you're probably right.",
+        "Bottoms up!",
+        "Cheers!",
+        ],
+    "?*x drink ?*y": [
         "Bottoms up!",
         "Cheers!",
         ],
@@ -339,12 +415,15 @@ default_responses = [
     "What does that suggest to you?",
     "Please continue",
     "Go on",
-    "Do you feel strongly about discussing such things?",
+    "Do you feel strongly about that?",
     "Tell me more?",
     "Yes .. and?",
     "mmmm.",
     "And then what?",
     "Mmkay.",
+    "What makes you say that?",
+    "Aaaaah.",
+    "Sure.",
     ]
 
 def respond(input):
