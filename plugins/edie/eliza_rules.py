@@ -33,19 +33,12 @@ import string
 
 ## Talking to the computer
 
-def interact(prompt, rules, default_responses):
-    """Have a conversation with a user."""
-    # Read a line, process it, and print the results until no input remains.
-    while True:
-        try:
-            # Remove the punctuation from the input and convert to upper-case
-            # to simplify matching.
-            input = remove_punct(raw_input(prompt).upper())
-            if not input:
-                continue
-        except:
-            break
-        print respond(rules, input, default_responses)
+def interact(input, rules, default_responses):
+    """Have a conversation with a Slack user."""
+    # Remove the punctuation from the input and convert to upper-case
+    # to simplify matching.
+    input = remove_punct(input.upper())
+    return respond(rules, input, default_responses)
 
 
 def respond(rules, input, default_responses):

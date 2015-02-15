@@ -347,7 +347,7 @@ default_responses = [
     "Mmkay.",
     ]
 
-def main():
+def respond(input):
     # We need the rules in a list containing elements of the following form:
     # `(input pattern, [output pattern 1, output pattern 2, ...]`
     rules_list = []
@@ -356,7 +356,4 @@ def main():
         pattern = eliza.remove_punct(str(pattern.upper())) # kill unicode
         transforms = [str(t).upper() for t in transforms]
         rules_list.append((pattern, transforms))
-    eliza.interact('ELIZA> ', rules_list, map(str.upper, default_responses))
-
-if __name__ == '__main__':
-    main()
+    return eliza.interact(input, rules_list, map(str.upper, default_responses))
