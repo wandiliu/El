@@ -2,14 +2,9 @@
 Meet Ellie, Eliza's younger, hipper, psychobabble-friendly successor. She makes a great Slackbot.
 
 ## Background
-Ellie's is Slack's Python-based [real-time messaging bot](https://github.com/slackhq/python-rtmbot) wrapped around  Daniel Connelly's [Python implementation of Peter Norvig's *Paradigms of AI Programming* Eliza](https://github.com/dhconnelly/paip-python). 
+Ellie's is Slack's Python-based [real-time messaging bot](https://github.com/slackhq/python-rtmbot) wrapped around  Daniel Connelly's [Python implementation](https://github.com/dhconnelly/paip-python) of Peter Norvig's *Paradigms of AI Programming* Eliza .. with updated diction. Loads has changed since 1991, and she seemed a little standoff-ish – which also led to her new, hip name.
 
-... with updated diction. Loads has changed since 1991, and she seemed a little standoff-ish – which also led to her new, hip name.
-
-The langauge updates rendered her internals less elegant, but I think – hope – they make Ellie more fun than Eliza ever would've been.
-
-## Running Ellie
-Ellie should be run, for the most part, as Slack [instructs](http://github.com/slackhq/python-rtmbot):
+The langauge updates rendered her internals less elegant, but I think – hope – they make Ellie more fun than Eliza ever was.
 
 ### Dependencies
 * [websocket-client](https://pypi.python.org/pypi/websocket-client/)
@@ -44,4 +39,4 @@ Ellie should be run, for the most part, as Slack [instructs](http://github.com/s
 ````
 
 ## Ellie in action
-![Ellie in action](http://i.imgur.com/DImoAqa.png)
+![Ellie in action](screenshot.png)
