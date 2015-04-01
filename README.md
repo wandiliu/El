@@ -6,6 +6,9 @@ Ellie's is Slack's Python-based [real-time messaging bot](https://github.com/sla
 
 The langauge updates rendered her internals less elegant, but I think – hope – they make Ellie more fun than Eliza ever was.
 
+### Modding Ellie
+If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/christinac/ellie-slack/blob/master/plugins/ellie/ellie.py) is your file. Push changes back, in a branch, if you think others will appreicate your wit.
+
 ### Dependencies
 * [websocket-client](https://pypi.python.org/pypi/websocket-client/)
 * [python-slackclient](https://github.com/slackhq/python-slackclient)
@@ -24,7 +27,7 @@ The langauge updates rendered her internals less elegant, but I think – hope 
   pip install -r requirements.txt
   ````
 
-3. Configure rtmbot (Slack instructions [here](https://api.slack.com/bot-users))
+3. Configure rtmbot ([Slack instructions](https://christinac.slack.com/services/new/bot).) From the Slack console, you'll get to choose your bot's name and icon. Though we've become partial to Ellile, bot-naming is up to you.
 
   ````
   cp example-config/rtmbot.conf .
@@ -32,7 +35,7 @@ The langauge updates rendered her internals less elegant, but I think – hope 
   SLACK_TOKEN: "xoxb-11111111111-222222222222222"
   ````
 
-4. Run her!
+4. Run her! (You've got to keep her running so long as you'd like her to keep chattering; something like [nohup](http://linux.die.net/man/1/nohup) might be helpful.)
 
 ````
   python rtmbot.py
