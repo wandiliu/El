@@ -7,7 +7,7 @@ Ellie's is Slack's Python-based [real-time messaging bot](https://github.com/sla
 The langauge updates rendered her internals less elegant, but I think – hope – they make Ellie more fun than Eliza ever was.
 
 ### Modding Ellie
-If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/christinac/ellie-slack/blob/master/plugins/ellie/ellie.py) is your file. Push changes back, in a branch, if you think others will appreicate your wit.
+If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/christinac/ellie-slack/blob/master/plugins/ellie/ellie.py) is your file. Push changes back here, in a branch, if you think others will appreicate your wit.
 
 ### Dependencies
 * [websocket-client](https://pypi.python.org/pypi/websocket-client/)
@@ -21,7 +21,7 @@ If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/
   cd ellie-slack
   ````
 
-2. Install dependencies (With virtualenv if you're doing things correctly.)
+2. Install dependencies
 
   ````
   pip install -r requirements.txt
