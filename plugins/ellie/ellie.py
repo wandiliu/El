@@ -6,13 +6,13 @@ import eliza
 
 rules = {
     "?*x hey ?*y": [
-        "Hey! I'm Edie."
+        "Hey! I'm Ellie."
         ],
     "?*x hi ?*y": [
-        "Hi! I'm Edie."
+        "Hi! I'm Ellie."
         ],
     "?*x hello ?*y": [
-        "Hello there. I'm Edie."
+        "Hello there. I'm Ellie."
         ],
     "?*x yo ?*y": [
         "yo."
@@ -34,7 +34,7 @@ rules = {
         "I'm perfectly fine as a bot, thanks.",
         "How might a lowly little bot solve your problems?",
         ],
-    "?*x edie ?*y": [
+    "?*x ellie ?*y": [
         "I'm here for you.",
         "Of course. That's me.",
         ],
@@ -49,7 +49,7 @@ rules = {
     "?*x slackbot ?*y": [
         "He's my cousin.",
         "If you want to talk to Slackbot, switch channels.",
-        "I'm not a Slackbot! I'm Edie.",
+        "I'm not a Slackbot! I'm Ellie.",
         ],
     "?*x slack ?*y": [
         "I like them.",
