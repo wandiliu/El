@@ -41,5 +41,16 @@ If you'd like to dive into Ellie's innerworkings, [ellie.py](https://github.com/
   python rtmbot.py
 ````
 
+### Docker
+1. If you want to build the Docker image on your own
+````
+docker build -t napramirez/ellie-slack:1.0 .
+````
+
+2. Or if you already have the Slack token and just want to run the Docker image
+````
+docker run -d --env SLACK_TOKEN="xoxb-11111111111-222222222222222" napramirez/ellie-slack:1.0
+````
+
 ## Ellie in action
 ![Ellie in action](screenshot.png)
