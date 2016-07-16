@@ -6,16 +6,16 @@ import eliza
 
 rules = {
     "?*x hey ?*y": [
-        "Hey! I'm Ellie."
+        "Hey! I'm Ellie.",
         ],
     "?*x hi ?*y": [
-        "Hi! I'm Ellie."
+        "Hi! I'm Ellie.",
         ],
     "?*x hello ?*y": [
-        "Hello there. I'm Ellie."
+        "Hello there. I'm Ellie.",
         ],
     "?*x yo ?*y": [
-        "yo."
+        "yo.",
         ],
     "?*x how are ?*y": [
         "How so?",
@@ -54,7 +54,7 @@ rules = {
     "?*x slack ?*y": [
         "I like them.",
         "They're kindof responsible for me.",
-        "Look, I can't say more. I like my job."
+        "Look, I can't say more. I like my job.",
         ],
     "?*x totally ?*y": [
         "Totally",
@@ -96,7 +96,7 @@ rules = {
         "Do you really think it's likely that ?y?",
         "Do you wish that ?y?",
         "What do you think about ?y?",
-        "Really--if ?y?"
+        "Really--if ?y?",
         ],
     "?*x I dreamt ?*y": [
         "How do you feel about ?y in reality?",
@@ -127,7 +127,7 @@ rules = {
         "Who else in your family ?y?",
         "Tell me more about your family?",
         "Does she influence you strongly?",
-        "How's your relationship with your mother?"
+        "How's your relationship with your mother?",
         "Where's your mother from?",
         "What else should I know about your mother?",
         ],
@@ -136,7 +136,7 @@ rules = {
         "Who else in your family ?y?",
         "Tell me more about your family?",
         "Does she influence you strongly?",
-        "How's your relationship with your mom?"
+        "How's your relationship with your mom?",
         "Where's your mom from?",
         "What else should I know about your mom?",
         ],
@@ -145,7 +145,7 @@ rules = {
         "Who else in your family ?y?",
         "Tell me more about your family?",
         "Does she influence you strongly?",
-        "How's your relationship with your mum?"
+        "How's your relationship with your mum?",
         "Where's your mum from?",
         "What else should I know about your mum?",
         ],
@@ -225,12 +225,12 @@ rules = {
         "What specifically would you like to change?",
         "Why aren't things changing?",
         "How can you make ?y better?",
-        "If you could change anything about ?y, what would you change?"
+        "If you could change anything about ?y, what would you change?",
         ],
     "?*x no ?*y": [
         "Why not?",
-        "Alright then!"
-        "Okay!"
+        "Alright then!",
+        "Okay!",
         "You're being a downer.",
         "What's really going on?",
         "Would you like a drink?",
@@ -238,7 +238,7 @@ rules = {
     "?*x I was ?*y": [
         "Were you really?",
         "Perhaps I already knew you were ?y.",
-        "Why do you tell me you were ?y now?"
+        "Why do you tell me you were ?y now?",
         ],
     "?*x was I ?*y": [
         "What if you were ?y?",
@@ -302,21 +302,21 @@ rules = {
         "What if someone gave you a puppy right now?",
         ],
     "?*x I felt ?*y": [
-        "What other feelings do you have?"
+        "What other feelings do you have?",
         "Would you like to be famous?",
         ],
     "?*x need ?*y": [
         "Isn't that a touch demanding?",
         "Can't you be more patient?",
         "What about the other side? What would they say?",
-        "Is that really what ?x need?"
+        "Is that really what ?x need?",
         ],
     "?*x I ?*y you ?*z": [
         "Perhaps in your fantasy we ?y each other",
         "Do you dream about how we ?y each other?",
         "That's nice.",
         "I'm not surprised.",
-        "Well, at least you finally said it."
+        "Well, at least you finally said it.",
         ],
     "?*x do you ?*y me?": [
         "What makes you think that?",
@@ -392,12 +392,12 @@ rules = {
     "?*x different ?*y": [
         "How so?",
         "What would make it that way?",
-        "If you could wake up tomorrow with different ?y, what would you do?"
+        "If you could wake up tomorrow with different ?y, what would you do?",
         ],
     "?*x hopeless ?*y": [
         "Woah, that got serious quickly.",
         "Well, with that attitude, what do you expect?",
-        "Oh, shove off. It's not hopeless!"
+        "Oh, shove off. It's not hopeless!",
         ],
     "?*x whisky ?*y": [
         "Bottoms up!",
