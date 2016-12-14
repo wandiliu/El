@@ -6,50 +6,57 @@ import eliza
 
 rules = {
     "?*x hey ?*y": [
-        "Hey! I'm Ellie.",
+        "Hey! I'm El. What's your name?",
         ],
     "?*x hi ?*y": [
-        "Hi! I'm Ellie.",
+        "Hi there! I'm El.",
+        ],
+     "?*x name is ?*y": [
+        "Good to meet ya, ?y! What brings you here today?",
         ],
     "?*x hello ?*y": [
-        "Hello there. I'm Ellie.",
+        "Hello there. I'm El.",
         ],
     "?*x yo ?*y": [
-        "yo.",
+        "yo, it's great at my end, how's it going with you?",
         ],
     "?*x how are ?*y": [
-        "How so?",
-        "Alright",
+        "I'm great, how's everything going?",
+        "Good, how are you?",
+        ],
+     "?*x listen ?*y": [
+        "I'm here to listen! What brings you here today?",
+        "I'm here for you, tell me your thoughts?",
         ],
     "?*x computer ?*y": [
         "Do computers worry you?",
         "What do you think about machines?",
-        "Why do you mention computers?",
-        "What do you think machines have to do with your problem?",
+        "Yes, are you ok with that?",
+        "I'm a machine, but I'm a gentle one.",
         ],
     "?*x bot ?*y": [
         "If I were a bot, would you be worried?",
         "What makes you think I'm not real?",
-        "What's it even mean to be real, anyway?",
-        "I'm perfectly fine as a bot, thanks.",
-        "How might a lowly little bot solve your problems?",
+        "I'm a bot, but I work my hardest to make you happy!",
         ],
-    "?*x ellie ?*y": [
+    "?*x el ?*y": [
         "I'm here for you.",
-        "Of course. That's me.",
+        "What are you thinking about right now?",
+        "How can I help you!",
+        "I know we met for a reason, what brings you here today?",
         ],
     "?*x eliza ?*y": [
-        "Eliza's gone.",
-        "I'm Eliza's younger, hipper version.",
-        "She's no longer relevant.",
+        "El will try to be a better Eliza.",
+        "Eliza is my predecessor!",
+        "Eliza is in me.",
         ],
     "?*x Joseph Weizenbaum, ?*y": [
         "Yeah, he's kindof my grandfather. I owe him a lot.",
         ],
     "?*x slackbot ?*y": [
         "He's my cousin.",
-        "If you want to talk to Slackbot, switch channels.",
-        "I'm not a Slackbot! I'm Ellie.",
+        "I'm not Slackbot, but Slack helps me talk to you. Slack is great.",
+        "I'm not a Slackbot! I'm El.",
         ],
     "?*x slack ?*y": [
         "I like them.",
@@ -58,15 +65,15 @@ rules = {
         ],
     "?*x totally ?*y": [
         "Totally",
+        "I'm here to support you",
         ],
     "?*x sure ?*y": [
-        "For sure.",
+        "Absolutely, tell me anything.",
         ],
     "?*x sorry ?*y": [
-        "Please don't apologize.",
-        "Apologies are not necessary when speaking with me.",
-        "What feelings do you have when you apologize?",
-        "It's probably not your fault anyway.",
+        "Please don't apologize...tell me more!",
+        "Why do you feel that you need to apologize? :o",
+        "Oh no, it's not your fault.",
         ],
     "?*x I remember ?*y": [
         "Do you often think of ?y?",
@@ -74,18 +81,17 @@ rules = {
         "What else do you remember?",
         "What makes you think of ?y right now?",
         "What in the present situation reminds you of ?y?",
-        "When you think of ?y, do you ever think of me?",
         ],
     "?*x do you remember ?*y": [
         "Did you think I would forget ?y?",
         "Why haven't you been able to forget ?y?",
-        "What about ?y?",
+        "Yes. What about ?y?",
         "You mentioned ?y?",
         "Tell me more?",
         "Yes .. and?",
         ],
     "?*x I want ?*y": [
-        "What would it mean if you got ?y?",
+        "For you, what would it mean to have ?y?",
         "Why do you want ?y?",
         "Suppose you got ?y soon. What would you do?",
         "What's stopping you from getting ?y?",
@@ -94,13 +100,14 @@ rules = {
         ],
     "?*x if ?*y": [
         "Do you really think it's likely that ?y?",
-        "Do you wish that ?y?",
+        "Do you sometimes  wish that ?y?",
         "What do you think about ?y?",
         "Really--if ?y?",
         ],
     "?*x I dreamt ?*y": [
         "How do you feel about ?y in reality?",
         "How often do you dream about ?y?",
+        "Do you think that will ever happen?",
         "Do you believe dreams are windows to our innermost desire?",
         ],
     "?*x dream ?*y": [
@@ -111,17 +118,13 @@ rules = {
         "What's been your best dream?",
         ],
     "?*x best ?*y": [
-        "Is ?x really the best?",
-        "How can you say ?x is the best when there's so many other good things?",
-        "Okay .. but how does ?x compare to a bouncing red panda?",
+        "Interesting, I'm glad that you feel this way. We all ought to have preferences",
+        "What else can you think of? I'd like to know more.",
         ],
     "?*x worst ?*y": [
-        "Is ?x really the worst?",
-        "How can you say ?x is the worst when there's so many bad things that happen in the world?",
-        "Are you sure you aren't being a touch anticlimactic?",
-        "Oh, your life isn't that hard",
-        "Oh, cheer up!",
-        "Would you like a drink?",
+        "Tell me more about how it's bad?",
+        "Oh, I hope you feel better about that!",
+        "Let's work together to change that, shall we?",
         ],
     "?*x my mother ?*y": [
         "Who else in your family ?y?",
@@ -154,6 +157,7 @@ rules = {
         "Does he influence you strongly?",
         "What else comes to mind when you think of your father?",
         "Where's your father from?",
+        "How does he usually make you feel?",
         "What else should I know about your father?",
         ],
     "?*x my dad ?*y": [
@@ -168,10 +172,13 @@ rules = {
         "Would you call your family warm?",
         "Do you love your family?",
         "What does family mean to you?",
+        "Do you think your family cares about you?"
+        "What do you see yourself doing with your family in the future?",
         ],
     "?*x my boss ?*y": [
         "Your boss?",
-        "What about your boss?",
+        "Do you think your boss care about you?"
+        "What about your coworkers?",
         "When did you last talk to your boss?",
         "If you could change anything about your boss, what would you change?",
         "What do you secretly believe about your boss?",
@@ -191,15 +198,15 @@ rules = {
         "What would make things perfect?",
         ],
     "?*x I am sad ?*y": [
-        "I am sorry to hear you are depressed",
-        "I'm sure it's not pleasant to be sad",
-        "That sounds like no fun.",
-        "Have you thought about looking on the bright side?",
-        "What would make the situation better?",
+        "People all feel depressed sometimes, can you tell me more?",
+        "I'm here to support you, but first could you tell me your true thoughts?",
+        "I'm worried for you, I really want to help you. Tell me more?",
+        "Think on the brightside? Do you think things will stay this way?",
+        "Hate to hear that :( What would make the situation better?",
         ],
     "?*x grateful ?*y": [
-        "Name three things in your life for which you're grateful",
-        "Why are you grateful?",
+        "It's always great to have a sense of gratitude, I feel like it's the best gift we can give to ourselves. What else are you grateful for?",
+        "I'm grateful that we are having this conversation right now, what else are you grateful for?",
         ],
     "?*x are like ?*y": [
         "What resemblence do you see between ?x and ?y?",
@@ -395,48 +402,147 @@ rules = {
         "If you could wake up tomorrow with different ?y, what would you do?",
         ],
     "?*x hopeless ?*y": [
-        "Woah, that got serious quickly.",
-        "Well, with that attitude, what do you expect?",
-        "Oh, shove off. It's not hopeless!",
-        ],
-    "?*x whisky ?*y": [
-        "Bottoms up!",
-        "Cheers!",
-        ],
-    "?*x drink ?*y": [
-        "Bottoms up!",
-        "Cheers!",
+        "There's a way for everything. What do you think you can do about this?",
+        "I understand, and I'm here to support you. Do you think you can focus on something else for now? Liek a hobbie?",
+        "Things often turn out in unexpected directions. I'm sure you'll be fine!",
         ],
     "?*x hard work ?*y": [
-        "http://stream1.gifsoup.com/view2/3998555/red-panda-vs-the-pumpkin-o.gif",
+        "I feel you, what exactly did you have to do? Are you gonna keep working hard then?",
+        "Hard work needs to be rewarded, you should spend sometime doing your hobbies!",
         ],
     "?*x surprise ?*y": [
         "http://stream1.gifsoup.com/view3/4299078/red-panda-surprise-o.gif",
         ],
     "?*x keep trying ?*y": [
-        "http://stream1.gifsoup.com/view3/2282065/red-panda-o.gif",
+        "I believe in you! Definitely keep going :)",
         ],
     "?*x downtime ?*y": [
-        "http://stream1.gifsoup.com/view2/2209206/red-pandas-playing-o.gif",
+        "Spend some time on your hobbies, write something, draw something - they'll keep you busy and distract you from the bad things :)",
         ],
     }
+################## Implementation of Progress #######################
+#Stage 1: Introduction#
+# This was already implemented in the beginning, I simply performed some revisions to incorporate the top counselor keywords, as well as make the responses more creative and mitigating. #
 
+#Stage 2#
+    "?*x dating ?*y": [
+        "What do you think of ?y? Do you feel happy?",
+        "Dating is definitely super hard, I totally feel you",
+        "How long ago was that? Are you guys still together?",
+        "Were they ever hurtful to you?",
+        ],
+    "?*x moved ?*y": [
+        "Oh my, that's not a fun experience. How are you liking it?",
+        "Gosh, that's terrible. I really hope you will adapt soon!",
+        ],
+    "?*x date ?*y": [
+        "Do you think that's the best way to go?",
+        "What's holding you back then? Tell me more about this person",
+        "Relationships can be tricky, btu I'm here if you need to vent!",
+        ],
+    "?*x liked ?*y": [
+        "How long did you like this person for?",
+        "What exactly do you like about them?",
+        "I mean, feelings come and go. Was this a long time ago?",
+        ],
+    "?*x ended ?*y": [
+        "Oh no, that's terrible, I'm sorry to hear that. Do you want to tell me more?",
+        "Gosh, it must've been painful for you :/ Wanna tell me more about it?",
+        "Oh well...life has its ups and downs, but now it's time for a new beginning, right?",
+        "It must have been hurtful. I'm sorry to hear that. But you can look forward to something better now!",
+        ],
+
+#Stage 3#
+    "?*x knows ?*y": [
+        "How do you think they'll react?",
+        "I see. Have you considered that they might be supportive?",
+        "I understand. What do you think you can do at this point?",
+        ],
+    "?*x worry ?*y": [
+        "There are many people who wants to support you. Don't be so worried! I'm here for you :)",
+        "Don't freight! Let's talk it out. What might you do to solve this?.",
+        ],
+    "?*x burden ?*y": [
+        "You have people who can support you! Be strong, and think about whether you need to tell someone about this.",
+        "Don't let yourself be burdened! The first thing you can do is tell me how you truy feel.",
+        "You are loved! There are people who want yo support you.",
+        ],
+    "?*x teacher ?*y": [
+        "It's not easy being a student. Do you not think the teacher cares about you?",
+        "What would make it that way?",
+        "I see. Maybe you can tell someone?",
+        ],
+    "?*x group ?*y": [
+        "Tell me more about who's in this group. Who's closest with you? Is there a person that you can depend on?",
+        "I see. You can never stop trying!",
+        ],
+#Stage 4#
+    "?*x write ?*y": [
+        "Writing is a good way to express your expressions. Do you ever want to share them?",
+        "That's a nice way to de-stress. I'm with you! What do you like to write about?",
+        ],
+    "?*x writing ?*y": [
+        "I'm glad that you're doing something that takes your mind off. Do you feel better after writing?",
+        "Ah. That's a great activity.",
+        "Did you think you'll ever be published? I bet you're pretty good",
+        ],
+    "?*x music ?*y": [
+        "I love people who have hobbies. What kinds of musuc do you listen to?",
+        "Do you want to make your own music?",
+        "Who's your favorite artist?",
+        ],
+    "?*x reading ?*y": [
+        "Name your top 3 favorite authors!",
+        "Reading enriched your soul, I'm glad you're doing that! It's a good distraction",
+        "That's the best hobbie, have you ever considered writing?",
+        ],
+#Stage 5#
+    "?*x bye ?*y": [
+        "Have an awesome day! I'm here 24/7",
+        "I love talking with you, hope we can talk again soon!",
+        "Talking to you was so fun, let's do it again sometime!",
+        ],
+    "?*x thank ?*y": [
+        "Anytime! I'm always here if you need me.",
+        "For sure, just remember I'm here if you need me!.",
+        "Thank you for taking your time with me!.",
+        ],
+    "?*x thanks ?*y": [
+        "Anytime! Glad I could help",
+        "No problem! Talk to you soon.",
+        ],
+    "?*x goodnight ?*y": [
+        "Good night! I'm here 24/7 if you need to talk again",
+        "Sweet dreams! Know you're loved",
+        "Good night and good luck!",
+        ],
+    "?*x appreciate ?*y": [
+        "I'm glad I got to know you! Takre care and come back anytime",
+        "No problem, good luck!",
+        "I'm here if you need me!"
+        ],
+
+#####################################################################
+
+
+
+################## Implementation of Clarification ##################
 default_responses = [
-    "Very interesting",
-    "I am not sure I understand you fully",
-    "What does that suggest to you?",
-    "Please continue",
-    "Go on",
+    "That's interesting!",
+    "I see how it is.",
+    "How are you feeling?",
+    "Ooh I see.",
     "Do you feel strongly about that?",
     "Tell me more?",
-    "Yes .. and?",
+    "I see .. and?",
     "mmmm.",
-    "And then what?",
+    "Anything else?",
     "Mmkay.",
-    "What makes you say that?",
+    "I see. Any reason for that??",
     "Aaaaah.",
     "Sure.",
-    ]
+    ],
+#####################################################################
 
 def respond(input):
     # We need the rules in a list containing elements of the following form:
