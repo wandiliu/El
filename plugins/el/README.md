@@ -25,7 +25,7 @@ Ideally, counselor creativity can be best imitated through a seq2seq network tha
 
 Again, this relies on the counselor's knowledge of the current "stage" of the conversation, which is heavily reliant on context. Because our model does not include an attention vector, the best way to incorporate existing knowledge into the model is to use the 5 stages and their respective texter-counselor "top keywords" discovered in the research of Althoff *et al*. These keywords are shown below:
 
-![stage keywords](https://github.com/wandiliu/El/blob/master/plugins/ellie/Screen%20Shot%202016-12-13%20at%202.55.10%20PM.png)
+![stage keywords](https://github.com/wandiliu/El/blob/master/plugins/el/Screen%20Shot%202016-12-13%20at%202.55.10%20PM.png)
 
 For my retrieval model, I will associate the texter's top keywords with responses containing their respective counselor keywords. 
 
