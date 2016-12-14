@@ -80,7 +80,8 @@ As I started implementing the 5 linguistic features into [El](https://github.com
 ###Performance Evaluation
 I believe that I have performed satisfactorily in the past 3 months, and is on the right track for winter quarter. However, I do wish that I had taken a less rigorous courseload (6) during Fall quarter, and had allocated more time for my retrieval model. Although it is a working model, I am seeing how it could be further improved in other ways - such as adding response_length variables, and importing other modules such as NLTK to speed up preprocessing. Therefore, I aim to devote more time to the neural model in the upcoming quarter, and transcend my performance in the past 3 months. I also wish that I had spent more time researching other projects, and learning a new programming language. Due to my unfamiliarity with other languages I was rushed to settle with the source code that was implemented in Python. I believe that in order for me to create a better neural model, I need to overlook the factor of syntax, and instead focus on the model’s own functionality. Therefore, I will choose a more appropriate model over one in a familiar language, even if it means sacrificing time to adapt to the syntax itself. 
 
-
+###Acknowledgements
+I would like to thank Professor Scalzo and Graham, without whom I would not have been able to apply to my ideal corpus. I'm thankful for Dr. Haseltine, who contributed his insight and helped me set my path and vision for this project. Thank you Nitya, for corresponding with me tirelessly through email and answering my concerns. I'm thankful for the entirely IRI team for their help and support. Finally, I'm grateful for Professor Kleinrock and his generous guidance, under which I was able to have a fruitful start to this project.
 ####
 
 
